@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.JavaFXApplication1">
+   <children>
+      <TextFlow layoutX="48.0" layoutY="36.0" lineSpacing="8.0" prefHeight="117.0" prefWidth="492.0" style="-fx-background-color: #e5e5e5; -fx-background-radius: 5;" textAlignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Drone Controller(Test software)!" wrappingWidth="432.8720703125">
+               <font>
+                  <Font name="Calibri" size="37.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="64.0" layoutY="165.0" prefHeight="108.0" prefWidth="461.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Connect the quadcopter system and click next. If you want to see console messages, open this jar file from console.">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <Button fx:id="next" layoutX="481.0" layoutY="338.0" mnemonicParsing="false" onAction="#newScene" text="Next" />
+   </children>
+</AnchorPane>

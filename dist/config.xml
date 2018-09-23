@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ To change this license header, choose License Headers in Project Properties.
+ To change this template file, choose Tools | Templates
+ and open the template in the editor.
+ -->
+
+<root>
+
+<Z-axis>
+    <key>UP</key>
+</Z-axis>
+
+<X-axis>
+    <key>W</key>
+</X-axis>
+
+<Y-axis>
+    <key>D</key>
+</Y-axis>
+
+<YAW>
+    <key>Q</key>
+</YAW>
+
+<!--STAB values 
+ 1- Enable
+ 2- HOLD ON
+ 3- HOLD OFF & Enable
+ -->
+<STAB>
+    <value>1</value>
+</STAB>
+
+
+
+</root>

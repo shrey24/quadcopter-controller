@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane onKeyPressed="#Key_pressed" onKeyReleased="#Key_released" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.Controller">
+   <center>
+      <AnchorPane id="AnchorPane" onKeyPressed="#Key_pressed" onKeyReleased="#Key_released" prefHeight="400.0">
+         <children>
+            
+            <HBox layoutX="35.0" layoutY="134.0" prefHeight="27.0" prefWidth="244.0" spacing="10.0">
+               <children>
+                  <Label text="Z-axis" />
+                  <Slider fx:id="SpeedInputZ" blockIncrement="1.0" min="-100.0" prefHeight="13.0" prefWidth="129.0" />
+                  <Label fx:id="SpeedLabelZ" text="Label" />
+               </children>
+            </HBox>
+            <HBox layoutX="35.0" layoutY="161.0" prefHeight="27.0" prefWidth="244.0" spacing="10.0">
+               <children>
+                  <Label text="X-axis" />
+                  <Slider fx:id="SpeedInputX" blockIncrement="1.0" min="-100.0" prefHeight="13.0" prefWidth="129.0" />
+                  <Label fx:id="SpeedLabelX" text="Label" />
+               </children>
+            </HBox>
+            <HBox layoutX="35.0" layoutY="187.0" prefHeight="27.0" prefWidth="244.0" spacing="10.0">
+               <children>
+                  <Label text="Y-axis" />
+                  <Slider fx:id="SpeedInputY" blockIncrement="1.0" min="-100.0" prefHeight="13.0" prefWidth="129.0" />
+                  <Label fx:id="SpeedLabelY" text="Label" />
+               </children>
+            </HBox>
+            
+            <TextFlow layoutX="54.0" layoutY="277.0" lineSpacing="8.0" prefHeight="88.0" prefWidth="492.0" style="-fx-background-color: #e5e5e5; -fx-background-radius: 5;" textAlignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Once updated XML file, press &quot;Refresh Keys&quot; Or Restart Application" wrappingWidth="432.8720703125">
+                     <font>
+                        <Font name="Courier" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </TextFlow>
+            <Button fx:id="RefreshKeyButton" layoutX="250.0" layoutY="241.0" mnemonicParsing="false" onAction="#RefreshKey" text="Refresh Keys" />
+            <VBox layoutX="283.0" layoutY="134.0" spacing="10.0">
+               <children>
+                  <Label fx:id="KeyLabelZ" text="W" />
+                  <Label fx:id="KeyLabelX" text="D" />
+                  <Label fx:id="KeyLabelY" text="C" />
+                  <Label fx:id="KeyLabelYAW" layoutX="10.0" layoutY="64.0" text="F" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+            <Label layoutX="283.0" layoutY="93.0" text="KEYS" />
+            <HBox layoutX="35.0" layoutY="214.0" prefHeight="27.0" prefWidth="244.0" spacing="10.0">
+               <children>
+                  <Label text="YAW" />
+                  <Slider fx:id="SpeedInputYAW" blockIncrement="1.0" min="-100.0" prefHeight="13.0" prefWidth="129.0" />
+                  <Label fx:id="SpeedLabelYAW" text="Label" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+            
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: #d6d6d6;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Select a port" />
+            <ChoiceBox fx:id="PortList" prefWidth="150.0" />
+            <Label fx:id="PortListLabel" prefHeight="17.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" right="30.0" top="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <bottom>
+      <TextFlow prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #0000ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="StatusText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Status: OK" />
+         </children>
+         <padding>
+            <Insets left="5.0" top="5.0" />
+         </padding>
+      </TextFlow>
+   </bottom>
+</BorderPane>
