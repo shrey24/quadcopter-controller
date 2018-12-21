@@ -5,7 +5,7 @@ This java based application is used to control a quadcopter (drone) and also rec
 <img src="https://github.com/shrey24/quadcopter-controller/blob/master/pics/welcome.png" width=70%/>
 
 ### Demo:
-<img src="https://github.com/shrey24/quadcopter-controller/blob/master/pics/controller_demo.gif" width=70%/>
+<img src="https://github.com/shrey24/quadcopter-controller/blob/master/pics/controller_demo.gif"/>
 
 1. This software reads for all available serial communication ports. (Ex. if you attach a new wireless device to a USB port, it will show up.)
 2. Select the port you choose for communication.
@@ -19,11 +19,11 @@ Each time data is sent in bunch of six bytes. Each byte represents specific valu
 <img src="https://github.com/shrey24/quadcopter-controller/blob/master/pics/data_send_table.png"/>
 
 Where,
-STAB – Stabilization
-HOLD is a special feature which makes copter steady at a point as soon as user release motion keys.
+- STAB = Stabilization
+- HOLD is a special feature which makes copter steady at a point as soon as user release motion keys.
 If HOLD is off copter stays in motion due to inertia of copter and user has to make it steady by controlling. 
-±100 is in %. X byte having value of -100 means motion in negative X direction (backward motion).
-FByte:
+- ±100 is in %. X byte having value of -100 means motion in negative X direction (backward motion).
+- FByte:
 Quad-copter software runs on the top of Linux kernel 4.x in raspberry pi. Any external program other than quad-copter control software can be executed in separate user privilege using this byte. For example: if raspberry pi can read data from humidity sensor
 
 <b>Note:</b> Currently control software supports 254 function values. On execution control software can be configured to reply a response called FResponse byte in response data.
