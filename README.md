@@ -11,7 +11,7 @@ This java based application is used to control a quadcopter (drone) and also rec
 2. Select the port you choose for communication.
 3. The X Y Z axis and YAW represent the movement directions of quadcopter. The value range is -100 to +100.
 4. Press the corresponding key to send the command to the quadcopter.
-5. You can change the key configurations by editing the <b>config.xml</b> file. Hit <b>Refresh Keys</b> button to make the changes in config.xml effictive.
+5. You can change the key configurations by editing the <b>config.xml</b> file. Hit <b>Refresh Keys</b> button to make the changes in config.xml effective.
 
 ### Protocol of communication
 #### Data sent:
